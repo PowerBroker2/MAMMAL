@@ -1,0 +1,46 @@
+# this mkdocs.yml is used to automatically make documentation for modules
+# for a list of configurations see https://www.mkdocs.org/user-guide/configuration/
+
+# Project information
+site_name: "MAMMAL"
+site_url: "https://ant.antcenter.io/mammal"
+repo_url: "https://git.antcenter.net/lbergeron/mammal"
+repo_name: "GitLab"
+site_description: "MAMMAL - Magnetic Anomaly Map Matching Airborne and Land"
+site_author: "ANT Center"
+
+# Documentation Layout
+nav:
+  - 'index.md'
+  - 'container.md'
+  - 'vscode.md'
+  - 'setup_py.md'
+  - 'application.md'
+  - 'kubernetes.md'
+  - 'api-docs-Docstrings'
+  - 'about.md'
+
+# Build Directories
+theme:
+  name: readthedocs
+docs_dir: "docs"
+site_dir: "site"
+extra_javascript:
+    - https://unpkg.com/mermaid/dist/mermaid.min.js
+
+# Formatting options
+markdown_extensions:
+  - codehilite
+  - def_list
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+  - mermaid2
+  - macros
+  - git-revision-date-localized:
+      locale: en
+      type: timeago
+      fallback_to_build_date: true
