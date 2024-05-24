@@ -4,7 +4,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
     long_description = fh.read()
 
 setup(
-    name             = 'MAMMAL',
+    name             = 'MAMMAL_MagNav',
     packages         = find_packages(),
     version          = '0.0.1',
     description      = 'Python package used to create aeromagnetic anomaly maps for Magnetic Navigation (MagNav)',
